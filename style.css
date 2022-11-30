@@ -7,7 +7,7 @@
     --color4: #494a56;
     --background1: #393964;
     --background2: #7d7cc2;
-    --background2: #ececff;
+    --background3: #ececff;
     --colorcard: white;
 }
 
@@ -97,6 +97,7 @@ nav img:hover{
 @media (max-width: 850px) {
     body {
         /* overflow: hidden; */
+        overflow-x: hidden;
     }
     .nav-list {
         position: absolute;
@@ -157,15 +158,9 @@ nav img:hover{
 
 
 main{
-    background-color: var(--background2);
     display: flex;
     width: 100%;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    color: var(--color4);
+    background-color: var(--background3);
 }
 
 
@@ -175,7 +170,12 @@ main.cards {
     display: flex;
     padding: 32px;
     height: 25rem;
-    max-width: 1200px;
+    width: 100;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--background3);
+
+    padding-top: 15rem;
 }
 
 main.cards section.card {
@@ -183,11 +183,14 @@ main.cards section.card {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    background-color:var(--colorcard) ;
     padding: 1rem 1.5rem;
-    border-radius: 8px;
-    max-height: 240px;
-    margin-left: 1rem;
+    border-radius: 9px;
+
+    max-height: 350px;
+    max-width: 20rem;;
+    margin-left: 3rem;
+
+    background-color:var(--colorcard) ;
 }
 
 main.cards section.card:first-child {
@@ -242,18 +245,16 @@ main.cards section.card.about {
 @media screen and (max-width:810px) {
     main.cards {
         flex-direction: column;
+        height: 50rem;
     }
     main.cards section.card {
         display: flex;
-        max-width: 10rem;
-        min-width: 20rem;
         height: 45rem;
         margin-left: 1rem;
         margin-bottom: 2rem;
-        margin-left: 0;
     }
     main.cards section.card:first-child {
-        margin-top: 35rem;
+        margin-top: 15rem;
     }
 }
 
