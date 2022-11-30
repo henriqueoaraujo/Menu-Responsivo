@@ -175,6 +175,7 @@ main.cards {
     display: flex;
     padding: 32px;
     height: 25rem;
+    max-width: 1200px;
 }
 
 main.cards section.card {
