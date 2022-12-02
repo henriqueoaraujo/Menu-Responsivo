@@ -205,15 +205,6 @@ aside {
 
 /* scrol bar */
 
-::-webkit-scrollbar-button:single-button {
-    background-color: var(--background2);
-    display: block;
-    width: 1.3rem;
-    height: 1.3rem;
-    
-    
-}
-
 ::-webkit-scrollbar {
     width: 10px;
     background: var(--background3);
