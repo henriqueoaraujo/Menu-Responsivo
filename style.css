@@ -66,8 +66,7 @@ nav img:hover{
     display: block;
     height: 60px;
     opacity: .6;
-    -o-transform: scaleX(-1);
-    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
 }
 
 /* menu */
@@ -295,7 +294,9 @@ main.cards section.card.about {
     box-shadow: 20px 20px 50px -30px #FFC1D5;
 }
 
-@media screen and (max-width:810px) {
+@media screen and (max-width:850px) {
+    
+
     main.cards {
         flex-direction: column;
         height: 65rem;
@@ -310,3 +311,4 @@ main.cards section.card.about {
     main.cards section.card:first-child {
         margin-top: 1rem;
     }
+}
